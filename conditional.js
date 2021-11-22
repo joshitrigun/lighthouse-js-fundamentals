@@ -1,5 +1,13 @@
-const packingList = ["bowls", "plates", "pots", "pans", "eating utensils", "glasses", "cups", "cooking utensils"];
-
-for(let pl of packingList){
-  console.log(...pl, pl[0])
+let umbrella = {
+  color: 'pink',
+  isOpen: false,
+  open: () =>{
+    if(umbrella.isOpen === 'true'){
+      return "The umbrella is already opened";
+    }
+    else {
+      umbrella.isOpen = true;
+      return "Julia opens the umbrella";
+    }
+  }
 }
